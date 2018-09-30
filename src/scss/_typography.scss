@@ -37,6 +37,14 @@
   font-weight: 500;
 }
 
+.text-display {
+  color: $soft-blue;
+  font-family: $font-family-headings;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
 .text-title {
   font-family: $font-family-headings;
   color: $white;
@@ -45,6 +53,25 @@
   font-weight: 500;
 }
 
-.text-display {
+.text-subheader {
   font-weight: 300;
+}
+
+.text-headline {
+  font-family: $font-family-headings;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.is-header {
+  font-family: $font-family-headings;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  line-height: 48px;
+
+  .in-header {
+    font-size: 48px;
+    position: relative;
+    top: 4px;
+    margin-right: 8px;
+  }
 }

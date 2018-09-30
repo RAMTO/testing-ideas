@@ -1,13 +1,13 @@
 // Colors
 $soft-blue:             #5e84df;
-$business-blue:         #4c84ff;
+$business-blue:         #4a90e2;
 $darkish-pink:          #e24358;
 $pale-orange:           #ffb75d;
 
 $black:                 #374255;    // Main text
 $white:                 #f9fafb;    // Header background color
 
-$slate:                 #5b6573;    // Menu item, Form labels
+$slate:                 #565656;    // Menu item, Form labels
 $gray:                  #9b9b9b;    // Text light color, Input border color
 $steel:                 #c8ccd4;    // Table border color
 $light:                 #efefef;    // Main background color
@@ -34,7 +34,9 @@ $info:                  $business-blue;
 $theme-colors: (
   dark: $black,
   slate: $slate,
-  light: $gray
+  light: $gray,
+  white: $white,
+  blue: $business-blue
 );
 
 // Optional - Map for root css variables
@@ -84,11 +86,11 @@ $texts: (
   headline: (
     default: (
       font-size:    20px,
-      line-height:  1.66
+      line-height:  1.14
     ),
     md: (
       font-size:    36px,
-      line-height:  1.66
+      line-height:  1.14
     )
   ),
   title: (
@@ -103,11 +105,11 @@ $texts: (
   ),
   subheader: (
     default: (
-      font-size:    16px,
+      font-size:    24px,
       line-height:  1.66
     ),
     md: (
-      font-size:    18px,
+      font-size:    40px,
       line-height:  1.66
     )
   )

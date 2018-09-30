@@ -67,8 +67,19 @@ strong {
   background-color: $light;
 }
 
+.section-dark {
+  background-color: $black;
+}
+
 .feature-icon {
   color: $soft-blue;
   font-size: 48px;
+}
+.with-offset-y {
+  margin-bottom: -230px;
+}
+
+.is-offset-y {
+  transform: translateY(-230px);
 }
 
