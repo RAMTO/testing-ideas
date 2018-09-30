@@ -1,0 +1,74 @@
+// Fonts
+@font-face {
+  font-family: 'google_sans_bold';
+  src: url('../fonts/googlesans-bold-webfont.woff2') format('woff2'),
+        url('../fonts/googlesans-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'google_sans_medium';
+  src: url('../fonts/googlesans-medium-webfont.woff2') format('woff2'),
+        url('../fonts/googlesans-medium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'google_sans_regular';
+  src: url('../fonts/googlesans-regular-webfont.woff2') format('woff2'),
+        url('../fonts/googlesans-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Base & resets
+body {
+  color: $black;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+strong {
+  font-weight: 500;
+}
+
+.container {
+  padding-left: 16px;
+  padding-right: 16px;
+
+  @include media-breakpoint-up(sm) {
+    padding: 0;
+  }
+}
+
+.container-features {
+  box-shadow: 0 6px 9px 1px rgba(222, 211, 211, 0.5);
+  background-color: #ffffff;
+  border: solid 1px #e3dede;
+  padding: 30px;
+}
+
+.section-header {
+  background-image: url('../img/header-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.section-white {
+  background-color: $white;
+}
+
+.section-light {
+  background-color: $light;
+}
+
+.feature-icon {
+  color: $soft-blue;
+  font-size: 48px;
+}
+

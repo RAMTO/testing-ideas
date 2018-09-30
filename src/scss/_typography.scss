@@ -1,0 +1,50 @@
+// Typography
+
+// Mixins and functions
+@mixin text() {
+  font-family: $font-family-primary;
+  color: color('gray-dark');
+  font-weight: normal;
+}
+
+@function texts-deep-get($map, $keys...) {
+  @each $key in $keys {
+    $map: map-get($map, $key);
+  }
+  @return $map;
+}
+
+// Classes
+@each $size in map-keys($texts) {
+  .text-#{$size} {
+    @include text;
+    font-size: texts-deep-get($texts, $size, 'default', 'font-size');
+    line-height: texts-deep-get($texts, $size, 'default', 'line-height');
+
+    @include media-breakpoint-up(md) {
+      font-size: texts-deep-get($texts, $size, 'md', 'font-size');
+      line-height: texts-deep-get($texts, $size, 'md', 'line-height');
+    }
+  }
+}
+
+.text-mega {
+  font-family: $font-family-headings;
+  color: $white;
+  letter-spacing: -0.4px;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.text-title {
+  font-family: $font-family-headings;
+  color: $white;
+  letter-spacing: -0.4px;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+  font-weight: 500;
+}
+
+.text-display {
+  font-weight: 300;
+}

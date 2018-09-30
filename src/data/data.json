@@ -1,0 +1,13 @@
+{
+  "meta": {
+    "title": "Авто огледи и услуги",
+    "description": "Авто огледи и услуги",
+    "keywords": "Авто огледи и услуги",
+    "author": "Autoscanner.bg",
+    "favicon": "img/icons/favicon.png"
+  },
+  "fonts": [
+    "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700",
+    "https://fonts.googleapis.com/css?family=Rubik:300,400,500,700&amp;subset=cyrillic"
+  ]
+}
