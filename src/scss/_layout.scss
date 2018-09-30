@@ -50,7 +50,11 @@ strong {
   box-shadow: 0 6px 9px 1px rgba(222, 211, 211, 0.5);
   background-color: #ffffff;
   border: solid 1px #e3dede;
-  padding: 30px;
+  padding: 16px;
+
+  @include media-breakpoint-up(lg) {
+    padding: 32px;
+  }
 }
 
 .section-header {
@@ -73,13 +77,29 @@ strong {
 
 .feature-icon {
   color: $soft-blue;
-  font-size: 48px;
+  font-size: 24px;
+
+  @include media-breakpoint-up(md) {
+    font-size: 48px;
+  }
 }
 .with-offset-y {
-  margin-bottom: -230px;
+
+  @include media-breakpoint-up(md) {
+  }
+
+  @include media-breakpoint-up(lg) {
+    margin-bottom: -230px;
+  }
 }
 
 .is-offset-y {
-  transform: translateY(-230px);
+
+  @include media-breakpoint-up(md) {
+  }
+
+  @include media-breakpoint-up(lg) {
+    transform: translateY(-230px);
+  }
 }
 
