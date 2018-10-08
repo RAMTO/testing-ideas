@@ -3,7 +3,6 @@
 // Mixins and functions
 @mixin text() {
   font-family: $font-family-primary;
-  color: color('gray-dark');
   font-weight: normal;
 }
 
@@ -59,7 +58,6 @@
 
 .text-headline {
   font-family: $font-family-headings;
-  text-transform: uppercase;
   font-weight: 500;
 }
 
@@ -82,4 +80,8 @@
   @include media-breakpoint-up(md) {
     line-height: 48px;
   }
+}
+
+.text-feature {
+  font-weight: 500;
 }

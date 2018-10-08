@@ -112,6 +112,16 @@ $texts: (
       font-size:    40px,
       line-height:  1.66
     )
+  ),
+  feature: (
+    default: (
+      font-size:    16px,
+      line-height:  1.4
+    ),
+    md: (
+      font-size:    20px,
+      line-height:  1.4
+    )
   )
 );
 
