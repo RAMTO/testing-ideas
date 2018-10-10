@@ -134,7 +134,7 @@
         <div class="offset-md-1 col-md-10">
           <div class="card-feature">
             <div class="state-form">
-              <form id="mainForm" action="" method="post" netlify novalidate>
+              <form id="mainForm" action="" method="post" netlify novalidate netlify-honeypot="bot-field">
                 <div class="form-row">
                   <div class="form-group col-md-12">
                     <label for="">Линк към обява</label>
@@ -153,6 +153,9 @@
                 </div>
                 <div class="form-row">
                   <div class="form-group col-md-12">
+                    <p class="d-none">
+                      <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+                    </p>
                     <input type="hidden" id="type" name="type" value="" reqired>
                     <button type="submit" class="btn btn-primary">Поискай цена</button>
                   </div>
