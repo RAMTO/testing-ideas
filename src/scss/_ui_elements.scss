@@ -82,10 +82,12 @@
     &:after {
       content: "\f336";
       font-family: "Font Awesome 5 Pro";
+      font-weight: 700;
       font-size: 90px;
       color: $primary;
       position: absolute;
-      right: 0;
+      right: -46px;
+      top: -64px;
     }
   }
 }
@@ -97,4 +99,8 @@
 .list-feature {
   display: flex;
   align-items: flex-start;
+}
+
+.state-success {
+  display: none;
 }

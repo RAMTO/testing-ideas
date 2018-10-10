@@ -99,7 +99,7 @@
 
       <h3 class="text-display text-center mb-4">Изберете услуга</h3>
 
-      <div class="row">
+      <div class="row mb-5">
         <div class="offset-md-1 col-md-5">
           <div class="card-feature">
             <div>
@@ -110,12 +110,12 @@
                 <li class="list-feature mb-2"><i class="fas mr-3 fa-video icon-feature text-primary"></i> <p class="text-light text-feature"> Видео</p></li>
               </ul>
             </div>
-            <button class="btn btn-primary">Избери</button>
+            <button class="btn btn-primary button-type" data-type="Стандартен оглед">Избери</button>
           </div>
         </div>
 
         <div class="col-md-5">
-          <div class="card-feature is-active">
+          <div class="card-feature">
             <div>
               <h2 class="text-headline mb-5">Технически оглед</h2>
               <ul>
@@ -125,46 +125,47 @@
                 <li class="list-feature mb-2"><i class="fas mr-3 fa-video icon-feature text-primary"></i> <p class="text-light text-feature"> Видео</p></li>
               </ul>
             </div>
-            <button class="btn btn-primary">Избери</button>
+            <button class="btn btn-primary button-type" data-type="Технически оглед">Избери</button>
           </div>
         </div>
       </div>
 
-      <!-- Begin Mailchimp Signup Form -->
-      <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
-      <style type="text/css">
-
-      </style>
-      <div id="mc_embed_signup">
-        <form id="cta-form" action="https://autoscanner.us19.list-manage.com/subscribe/post?u=4bac777bee55acb118a089248&amp;id=f8dfde93ee" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-          <div class="row">
-            <div class="offset-md-2 col-md-8">
-              <div class="row">
-                <div class="col-md-6">
-                  <input type="email" value="" name="EMAIL" class="form-control mb-3" id="mce-EMAIL" placeholder="E-mail адрес" required>
-                  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                  <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                    <input type="text" name="b_4bac777bee55acb118a089248_f8dfde93ee" tabindex="-1" value="">
+      <div class="row">
+        <div class="offset-md-1 col-md-10">
+          <div class="card-feature">
+            <div class="state-form">
+              <form id="mainForm" action="index.html" method="post">
+                <div class="form-row">
+                  <div class="form-group col-md-12">
+                    <label for="">Линк към обява (незадължително)</label>
+                    <input type="text" class="form-control" name="link">
                   </div>
                 </div>
-                <div class="col-md-6">
-                  <input type="submit" value="Поискай цена" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary d-block"></div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="">Вашия град</label>
+                    <input type="text" class="form-control" name="city">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="">Email адрес</label>
+                    <input type="text" class="form-control" name="email">
+                  </div>
                 </div>
-              </div>
+                <div class="form-row">
+                  <div class="form-group col-md-12">
+                    <input type="hidden" id="type" name="type" value="">
+                    <button type="submit" class="btn btn-primary">Поискай цена</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="state-success">
+              <h2 class="text-headline">Благодарим за проявения интерес!</h2>
             </div>
           </div>
-        </form>
+        </div>
       </div>
-      <!--End mc_embed_signup-->
 
-      {# <div class="row">
-        <div class="col-mb-6">
-          <input type="text">
-        </div>
-        <div class="col-mb-6">
-          <button class="btn btn-primary">Разбери повече</button>
-        </div>
-      </div> #}
     </div>
   </div>
 
