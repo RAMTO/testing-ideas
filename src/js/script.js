@@ -20,8 +20,9 @@ $mainForm.on('submit', function (e) {
   $inputs.each(function (index, input) {
     const $input = $(input)
     const value = $input.val().trim()
+    const inputName = $input.attr('name')
 
-    if (value === '') {
+    if (inputName !== 'bot-field' && value === '') {
       formValid = false
     }
   })
