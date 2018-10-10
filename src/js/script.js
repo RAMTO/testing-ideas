@@ -10,12 +10,11 @@ const $cardFeatures = $('.card-feature')
 const $stateForm = $('.state-form')
 const $stateSuccess = $('.state-success')
 
-let formValid = true
-
 $mainForm.on('submit', function (e) {
   $this = $(this)
   $inputs = $this.find('input')
 
+  let formValid = true
   e.preventDefault()
 
   $inputs.each(function (index, input) {
