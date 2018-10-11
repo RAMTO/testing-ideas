@@ -52,7 +52,7 @@
 }
 
 .form-control {
-  border: 1px solid $soft-blue;
+  border: 2px solid $soft-blue;
 }
 
 .btn-primary {
@@ -71,7 +71,11 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  min-height: 480px;
+  min-height: 320px;
+
+  @include media-breakpoint-up(lg) {
+    min-height: 450px;
+  }
 
   &.is-active {
     border-radius: 8px;
@@ -88,8 +92,16 @@
       position: absolute;
       right: -46px;
       top: -64px;
+      z-index: 2;
     }
   }
+}
+
+.form-feature {
+  border-radius: 8px;
+  background-color: #f9fafb;
+  box-shadow: 0 2px 3px 1px rgba(202, 200, 200, 0.5);
+  padding: 24px;
 }
 
 .icon-feature {

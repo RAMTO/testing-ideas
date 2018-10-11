@@ -9,6 +9,7 @@ const $buttonType = $('.button-type')
 const $cardFeatures = $('.card-feature')
 const $stateForm = $('.state-form')
 const $stateSuccess = $('.state-success')
+const $subForm = $('.sub-form')
 
 $mainForm.on('submit', function (e) {
   $this = $(this)
@@ -21,6 +22,8 @@ $mainForm.on('submit', function (e) {
     const $input = $(input)
     const value = $input.val().trim()
     const inputName = $input.attr('name')
+
+    $input.toggleClass('is-invalid', value === '')
 
     if (inputName !== 'bot-field' && value === '') {
       formValid = false
@@ -39,6 +42,8 @@ $buttonType.on('click', function () {
   const $this = $(this)
   const type = $this.data('type')
   const $parent = $this.parents('.card-feature')
+
+  $subForm.removeClass('d-none')
 
   $cardFeatures.removeClass('is-active')
   $parent.addClass('is-active')
